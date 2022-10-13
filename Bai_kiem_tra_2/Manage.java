@@ -19,7 +19,8 @@ public class Manage {
             System.out.println("║[2]. THÊM MỚI                                      ║");
             System.out.println("║[3]. CẬP NHẬT                                      ║");
             System.out.println("║[4]. XÓA                                           ║");
-            System.out.println("║[5]. SĂP XẾP                                       ║");
+            System.out.println("║[5]. Tăng                                          ║");
+            System.out.println("║[6]. Giảm                                          ║");
             System.out.println("║[0]. Thoát                                         ║");
             System.out.println("╚===================================================╝");
             System.out.println("Nhập lựa chọn:");
@@ -43,8 +44,10 @@ public class Manage {
                        delete();
                         break;
                     case 5:
-                        sort();
+                        ascending();
                         break;
+                    case 6:
+                        decrease();
                     case 0:
                         return;
                 }
